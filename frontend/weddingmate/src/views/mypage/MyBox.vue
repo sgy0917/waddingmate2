@@ -185,7 +185,7 @@
         box_name : box_name,
         boxId:this.$route.params.boxId
       }
-      const update = await this.$api("/mybox/update",requestBody,"POST")
+      const update = await this.$api("/mybox/update",requestBody,"PATCH")
       
       try{
         if(update.status === 200){

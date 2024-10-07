@@ -7,7 +7,7 @@ const router = express.Router();
 //아이템 삭제
 router.post('/del',myBoxItemDelete);
 //견적함 이름 수정 
-router.post('/update',myBoxNameUpdate)
+router.patch('/update',myBoxNameUpdate)
 //행 삭제
 router.post('/delectbox',myBoxDelete)
 
